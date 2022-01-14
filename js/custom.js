@@ -74,7 +74,7 @@
     wow js - Animation js
   -------------------------------------------------------------------------------*/
 
-  new WOW({ mobile: false }).init();
+  new WOW({ mobile:true}).init();
 
 
   });

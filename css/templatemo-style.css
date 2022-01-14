@@ -65,7 +65,15 @@ strong {
   color: #232B2B;
   font-weight: normal;
 }
-
+br{
+  margin-top: 2%;
+}
+.con{
+  color:white;
+}
+.str{
+  color: white;
+}
 p {
     color: #888;
     font-size: 16px;
@@ -212,8 +220,20 @@ a:hover, a:active, a:focus {
   box-sizing: border-box;
 }
 
-
-
+.mail{
+  display: block;
+  width: 35%;
+  margin-left: 30%;
+  margin-top: 40%;
+  background-color: white;
+  border: 1px solid orangered;
+  border-radius: 10px;
+}
+.mail:hover{
+  background-color: orangered;
+  color: white;
+  transition: ease-in 0.1s;
+}
 /*---------------------------------------
     Preloader section              
 -----------------------------------------*/
@@ -524,18 +544,19 @@ a:hover, a:active, a:focus {
 
 #contact {
   background: #E9724C;
+
 }
 
 #contact .contact-form,
 #contact .contact-thumb {
   padding-left:10px;
-  min-height: 75vh;
+  min-height: 55vh;
   font-size: 30px;
 }
 
 #contact .contact-img {
   background: url('../images/contact-img.jpeg') no-repeat;
-  min-height: 75vh;
+  min-height: 55vh;
 }
 
 #contact .contact-info {
@@ -665,6 +686,17 @@ footer {
     font-size: 22px;
     line-height: inherit;
   }
+  
+.mail{
+  display: block;
+  width:100%;
+  margin-left: 0%;
+  margin-top: 60%;
+  text-align: center;
+  background-color: white;
+  border: 1px solid orangered;
+  border-radius: 10px;
+}
 }
 
 @media only screen and (max-width: 767px) {
