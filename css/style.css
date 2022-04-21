@@ -65,7 +65,15 @@ strong {
   color: #232B2B;
   font-weight: normal;
 }
-
+br{
+  margin-top: 2%;
+}
+.con{
+  color:white;
+}
+.str{
+  color: white;
+}
 p {
     color: #888;
     font-size: 16px;
@@ -216,7 +224,7 @@ a:hover, a:active, a:focus {
   display: block;
   width: 35%;
   margin-left: 30%;
-  margin-top: 40%;
+  margin-top: 30%;
   background-color: white;
   border: 1px solid orangered;
   border-radius: 10px;
@@ -282,14 +290,16 @@ a:hover, a:active, a:focus {
 
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #ffffff;
+    background-color: #faf0f0;
+    opacity: 0.8;
 }
 
 .custom-navbar .navbar-brand {
     color: #333;
 	text-shadow: 1px 1px #fff;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 35px;
     letter-spacing: 1px;
 }
@@ -340,9 +350,10 @@ a:hover, a:active, a:focus {
         background: 0 0; 
     }
     .custom-navbar.top-nav-collapse {
-        background: #ffffff;
+        background: #fff4f4;
         box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
         padding: 0;
+        opacity:0.8 !important;
     }
 
 }
@@ -358,14 +369,15 @@ a:hover, a:active, a:focus {
 }
 
 #home .col-md-6 {
-  background: #f1e2d7;
+  background: #e0c7b6;
 /* light blue color: #c3eafd; */
   padding-right: 0;
   padding-left: 0;
+  text-align: center;
 }
 
 #home .home-img {
-  background: url('../images/home-img.jpg') no-repeat;
+  background: url('../images/main.jpeg') no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
@@ -392,7 +404,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #about .about-img {
-    background: url('../images/about-img.jpg') no-repeat;
+    background: url('../images/main2.jpeg') no-repeat;
   
     
 
@@ -539,11 +551,16 @@ a:hover, a:active, a:focus {
 
 }
 
-#contact .contact-form,
+#contact .contact-form{
+  min-height: 7vh;
+  text-align: center;
+  margin-top: -18px;
+}
 #contact .contact-thumb {
   padding-left:10px;
   min-height: 55vh;
   font-size: 30px;
+
 }
 
 #contact .contact-img {
@@ -600,7 +617,13 @@ a:hover, a:active, a:focus {
 }
 
 
-
+.mail{
+  margin-top: 20%;
+  font-size: 20px;
+}
+.mail:hover,:active{
+  transition: 0.6s ease-in;
+}
 /*---------------------------------------
    Footer section              
 -----------------------------------------*/
@@ -694,7 +717,9 @@ footer {
 @media only screen and (max-width: 767px) {
   .custom-navbar .navbar-brand {
     line-height: 18px;
+  
   }
+
 
   #home .home-thumb {
     height: auto;
@@ -731,6 +756,13 @@ footer {
   
   {
   margin-left: 18%;
+  }
+  #contact .contact-form .mail{
+    text-align: center;
+    margin-top: 40%;
+  }
+  #contact .contact-form{
+    min-height: 40vh;
   }
 }
 
