@@ -31,3 +31,4 @@ a=b.extend({},c.defaults,a);return a.lazy?this.bind(a.event,function(d){var c=b(
 
 // Initialize all .smoothScroll links
 jQuery(function($){ $.localScroll({filter:'.smoothScroll'}); });
+ 

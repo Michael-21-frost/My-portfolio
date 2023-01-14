@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+}
+body,html {
+    overflow-x:hidden;
+    height: 100vh;
+    
+}
+.nav{
+    width: 100%;
+    height: 7vh;
+    background-color:#cf8a1ae7;
+    color: white;
+    padding: 6px;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    line-height: 1.5;
+}
+h1{
+    color: white;
+    font-family: Tahoma;
+    font-weight: 400;
+    
+}
+section{
+    height: 70vh;
+    width: 90%;
+    padding:10px;
+    transform: translate(5%, 10%);
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: calc(50%);
+}
+.box{
+    width: 29%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 2px 20px rgb(209, 207, 207), -1px -1px 3px rgb(238, 237, 237);
+    margin: 2%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    
+  
+}
+.image-slider{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    background-image: url(../images/quotes-bg.jpg);
+    background-size: cover;
+    box-shadow: 1px 1px 2px grey;
+    display: block;
+  
+}
+.sample-pic{
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color:#946211f6;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 60px;
+    grid-gap: 8px;
+    padding: 5px;
+}
+
+.image-slider-2{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    background-image: url(../images/quotes-bg.jpg);
+    background-size: cover;
+    box-shadow: 1px 1px 2px grey;
+    display: block;
+  
+}
+.sample-pic-2{
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color:#946211f6;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 60px;
+    grid-gap: 8px;
+    padding: 5px;
+}
+
+.image-slider-3{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    background-image: url(../images/quotes-bg.jpg);
+    background-size: cover;
+    box-shadow: 1px 1px 2px grey;
+    display: block;
+  
+}
+.sample-pic-3{
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color:#946211f6;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 60px;
+    grid-gap: 8px;
+    padding: 5px;
+}
+img{
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+img:active{
+    width: 90%;
+}
+img.active{
+    filter: brightness(50%);
+    opacity: 0.5;
+}
+p{
+    padding: 5px;
+    text-transform: capitalize;
+    font-family: verdana;
+    font-size: 13px;
+    opacity: 0.7;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    width: 8%;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid  #946211f6;
+    color: #946211f6;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    margin-top:0%;
+    margin-left: -10%;
+    text-transform: capitalize;
+} 
+.btn-2{
+    width: 8%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #946211f6;
+    border: 1px solid white;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    margin-top:0%;
+    margin-left: 2%;
+    text-transform: capitalize;
+} 
+a:active{
+    font-size: 12px;
+}
