@@ -1,55 +1,76 @@
-
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Ubuntu",  sans-serif;
-  --nav-font: "Nunito",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Ubuntu", sans-serif;
+  --nav-font: "Nunito", sans-serif;
 }
+
 /* For Chrome, Edge, Safari */
 ::-webkit-scrollbar {
-  width: 6px;               /* make it thin vertically */
-  height: 6px;              /* make it thin horizontally */
+  width: 6px;
+  /* make it thin vertically */
+  height: 6px;
+  /* make it thin horizontally */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f0f0f0;      /* scrollbar track color */
+  background: #f0f0f0;
+  /* scrollbar track color */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #9b805a;   /* scrollbar handle color */
-  border-radius: 10px;      /* round edges */
-  border: 1px solid #f0f0f0; /* space between thumb and track */
+  background-color: #9b805a;
+  /* scrollbar handle color */
+  border-radius: 10px;
+  /* round edges */
+  border: 1px solid #f0f0f0;
+  /* space between thumb and track */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #9b805a;   /* hover effect */
+  background-color: #9b805a;
+  /* hover effect */
 }
 
 /* For Firefox */
 * {
-  scrollbar-width: thin;        /* options: auto | thin | none */
-  scrollbar-color: #9b805a #f0f0f0; /* thumb color | track color */
+  scrollbar-width: thin;
+  /* options: auto | thin | none */
+  scrollbar-color: #9b805a #f0f0f0;
+  /* thumb color | track color */
 }
 
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #1f1f1f; /* Background color for the entire website, including individual sections */
-  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #9b805a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #232323; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #1f1f1f;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #ffffff;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #9b805a;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #232323;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #9b805a; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #393939; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #393939; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #9b805a; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #9b805a;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #393939;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #393939;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #ffffff;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #9b805a;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -945,6 +966,7 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
 
 .about .profile-header .profile-badge {
@@ -1017,6 +1039,12 @@ section,
 @media (max-width: 991px) {
   .about .about-content {
     padding-left: 0;
+  }
+}
+
+@media(max-width:320px) {
+  .about .contact-links .contact-item {
+    font-size: 12px;
   }
 }
 
@@ -1302,7 +1330,7 @@ section,
 }
 
 .skills .skills-category h3 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 25px;
   position: relative;
   padding-bottom: 15px;
@@ -1433,6 +1461,12 @@ section,
   }
 }
 
+@media(max-width:320px) {
+  .skills .skills-category h3 {
+    font-size: 17px !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
@@ -1466,6 +1500,7 @@ section,
 .resume .resume-side .contact-info li {
   margin-bottom: 1rem;
   color: var(--default-color);
+  font-size: 14px;
 }
 
 .resume .resume-side .contact-info li i {
@@ -1572,169 +1607,424 @@ section,
   }
 }
 
+@media(max-width:320px) {
+  .resume .resume-side .contact-info li {
+    font-size: 13px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-@media (max-width: 991px) {
-  .portfolio .filter-sidebar {
-    margin-bottom: 30px;
-  }
-}
-
-.portfolio .filters-wrapper {
-  background-color: color-mix(in srgb, var(--surface-color), var(--default-color) 3%);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-}
-
-@media (max-width: 991px) {
-  .portfolio .filters-wrapper {
-    padding: 20px;
-  }
-}
-
-.portfolio .portfolio-filters {
-  padding: 0;
+/* Reset and Base Styles */
+* {
   margin: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (max-width: 991px) {
-  .portfolio .portfolio-filters {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
+
+/* Portfolio Section Styles */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.portfolio .portfolio-filters li {
-  cursor: pointer;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  color: var(--default-color);
-  transition: all 0.3s ease-in-out;
-  border-radius: 6px;
-  background: transparent;
-  position: relative;
-  border-left: 3px solid transparent;
+/* Portfolio Section Styles */
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio.section {
+  padding: 80px 0;
+  background-color: var(--background-color);
 }
 
-@media (max-width: 991px) {
-  .portfolio .portfolio-filters li {
-    padding: 8px 16px;
-    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-    border-left-width: 3px;
-  }
-}
-
-.portfolio .portfolio-filters li:hover {
-  color: var(--accent-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-left-color: color-mix(in srgb, var(--accent-color), transparent 50%);
-}
-
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-left-color: var(--accent-color);
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.4s;
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  height: 100%;
-}
-
-.portfolio .portfolio-wrap img {
-  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+.container {
   width: 100%;
-  height: 350px;
-  object-fit: cover;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 25px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
-  z-index: 3;
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateY(20px);
-  opacity: 0;
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info .content {
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateY(20px);
-}
-
-.portfolio .portfolio-wrap .portfolio-info .category {
-  display: inline-block;
-  color: var(--accent-color);
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: var(--contrast-color);
+.section-title h2 {
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 15px;
+  color: var(--accent-color);
+  position: relative;
 }
 
-.portfolio .portfolio-wrap .portfolio-info .portfolio-links {
+.section-title h2:before,
+.section-title h2:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: var(--accent-color);
+  display: inline-block;
+}
+
+.section-title h2:before {
+  margin: 0 15px 10px 0;
+}
+
+.section-title h2:after {
+  margin: 0 0 10px 15px;
+}
+
+.section-title p {
+  font-size: 1.1rem;
+  color: var(--default-color);
+  max-width: 600px;
+  margin: 25px auto 0;
+}
+
+/* ── Outer row: sidebar (col-lg-3) + cards column (col-lg-9) ──
+   This is the .row that wraps .col-lg-3 and .col-lg-9
+   We keep it as flex — this is CORRECT for the two-column layout
+────────────────────────────────────────────────────────────── */
+.portfolio-content>.row {
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  align-items: flex-start;
 }
 
-.portfolio .portfolio-wrap .portfolio-info .portfolio-links a {
+.col-lg-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
+}
+
+.col-lg-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding: 0 15px;
+}
+
+/* ── Sidebar ── */
+.filter-sidebar {
+  margin-bottom: 30px;
+}
+
+.filters-wrapper {
+  position: sticky;
+  top: 100px;
+  background: var(--surface-color);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.portfolio-filters {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-filters li {
+  display: block;
+  padding: 12px 20px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: var(--default-color);
+  border: 2px solid transparent;
+  background-color: color-mix(in srgb, var(--surface-color), var(--background-color) 50%);
+}
+
+.portfolio-filters li.filter-active {
+  background: var(--accent-color);
   color: var(--contrast-color);
-  width: 40px;
-  height: 40px;
+  border-color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+.portfolio-filters li:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+  transform: translateX(5px);
+}
+
+.portfolio-filters li.filter-active:hover {
+  background: color-mix(in srgb, var(--accent-color), black 15%);
+}
+
+/*portfolio─────────────────────────────────────────────────── */
+.portfolio-container {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 24px !important;
+  /* Kill the negative margins that .row adds */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  /* Make sure flex properties don't interfere */
+  flex-wrap: unset !important;
+}
+
+/* Stop the col-md-6 bootstrap percentages from controlling width */
+.portfolio-container>.col-lg-6,
+.portfolio-container>.col-md-6 {
+  flex: none !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ── Portfolio Cards ── */
+.portfolio-item {
+  display: block !important;
+}
+
+.portfolio-card {
+  background: var(--surface-color);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.portfolio-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent-color);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-color: var(--accent-color);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 30%);
+  margin-bottom: 20px;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.portfolio-card:hover .card-icon {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transform: scale(1.1);
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content .category {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.card-content h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--heading-color);
+  line-height: 1.3;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: var(--default-color);
+  margin-bottom: 20px;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.card-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.card-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  font-size: 18px;
-  transition: 0.3s;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  border: 2px solid var(--accent-color);
 }
 
-.portfolio .portfolio-wrap .portfolio-info .portfolio-links a:hover {
-  background-color: var(--accent-color);
-  transform: translateY(-3px);
+.card-links a:hover {
+  background: transparent;
+  color: var(--accent-color);
+  transform: scale(1.1) rotate(5deg);
 }
 
-.portfolio .portfolio-wrap:hover {
-  transform: translateY(-5px);
+/* ── Category icon colours ── */
+.filter-corporate .card-icon {
+  background: color-mix(in srgb, #2c3e50, transparent 90%);
+  color: #2c3e50;
 }
 
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.08);
+.filter-ecommerce .card-icon {
+  background: color-mix(in srgb, #e74c3c, transparent 90%);
+  color: #e74c3c;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  transform: translateY(0);
-  opacity: 1;
+.filter-immigration .card-icon {
+  background: color-mix(in srgb, #27ae60, transparent 90%);
+  color: #27ae60;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info .content {
-  transform: translateY(0);
+.filter-education .card-icon {
+  background: color-mix(in srgb, #9b59b6, transparent 90%);
+  color: #9b59b6;
+}
+
+.filter-webapps .card-icon {
+  background: color-mix(in srgb, #f39c12, transparent 90%);
+  color: #f39c12;
+}
+
+.filter-corporate:hover .card-icon {
+  background: #2c3e50;
+  color: var(--contrast-color);
+}
+
+.filter-ecommerce:hover .card-icon {
+  background: #e74c3c;
+  color: var(--contrast-color);
+}
+
+.filter-immigration:hover .card-icon {
+  background: #27ae60;
+  color: var(--contrast-color);
+}
+
+.filter-education:hover .card-icon {
+  background: #9b59b6;
+  color: var(--contrast-color);
+}
+
+.filter-webapps:hover .card-icon {
+  background: #f39c12;
+  color: var(--contrast-color);
+}
+
+a .inline-flex {
+  color: #9b805a !important;
+}
+
+/* ── Tablet ≤ 991px ── */
+@media (max-width: 991px) {
+
+  .col-lg-3,
+  .col-lg-9 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .filters-wrapper {
+    position: relative;
+    top: 0;
+  }
+
+  .portfolio-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .portfolio-filters li {
+    margin-bottom: 0;
+    transform: none !important;
+    white-space: nowrap;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+}
+
+/* ── Mobile ≤ 600px ── */
+@media (max-width: 600px) {
+  .portfolio.section {
+    padding: 40px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .portfolio-card {
+    padding: 20px;
+  }
+
+  .card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .card-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-filters li {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -2239,6 +2529,16 @@ section,
 @media (max-width: 768px) {
   .contact .contact-form h3 {
     font-size: 1.75rem;
+  }
+}
+
+@media(max-width:320px) {
+  .info-item .content {
+    padding: 1px !important;
+  }
+
+  .content p {
+    font-size: 12px !important;
   }
 }
 
